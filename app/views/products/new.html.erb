@@ -24,7 +24,8 @@
       var posting = $.post('/products', values);
 
       posting.done(function(data) {
-        console.log(data);
+        var product = data;
+        $("#productName").text(product["name"])
       });
     });
   });
