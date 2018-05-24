@@ -20,6 +20,8 @@
       event.preventDefault();
 
       var values = $(this).serialize();
+
+      var product = $.post('/products', values)
     })
   })
 </script>
